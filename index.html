@@ -1,0 +1,592 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Rihanna Jade | Links & Discounts</title>
+  <meta name="description" content="Discover my favourite brands, discount codes, beauty, fashion and lifestyle links.">
+
+  <style>
+    /* ===== MAIN COLOURS ===== */
+    :root {
+      --pink: #f9dce8;
+      --pink-dark: #d98eac;
+      --white: #ffffff;
+      --text: #342b30;
+      --muted: #887b82;
+      --border: #f1e6eb;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: var(--pink);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      min-height: 100vh;
+      padding: 35px 16px;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .website {
+      width: 100%;
+      max-width: 490px;
+      margin: 0 auto;
+    }
+
+    /* ===== PROFILE ===== */
+
+    .profile {
+      text-align: center;
+      margin-bottom: 27px;
+    }
+
+    .avatar {
+      width: 94px;
+      height: 94px;
+      border-radius: 50%;
+      background: white;
+      border: 3px solid white;
+      margin: 0 auto 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      color: var(--pink-dark);
+      font-family: Georgia, serif;
+      font-size: 28px;
+    }
+
+    /* To add your photo, replace the RI text above
+       with an img element using your photo URL. */
+
+    .profile h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 30px;
+      font-weight: normal;
+      letter-spacing: 1.5px;
+      margin-bottom: 8px;
+    }
+
+    .profile p {
+      font-size: 13px;
+      color: #76636c;
+      line-height: 1.7;
+    }
+
+    .socials {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 17px;
+    }
+
+    .socials a {
+      text-decoration: none;
+      background: white;
+      padding: 10px 17px;
+      border-radius: 30px;
+      font-size: 12px;
+      transition: 0.2s;
+    }
+
+    .socials a:hover {
+      background: #fff0f6;
+      transform: translateY(-2px);
+    }
+
+    /* ===== WHITE SECTION BOXES ===== */
+
+    .section {
+      background: var(--white);
+      padding: 23px 19px;
+      border-radius: 18px;
+      margin-bottom: 17px;
+      box-shadow: 0 5px 18px rgba(126, 76, 99, 0.05);
+    }
+
+    .section-heading {
+      text-align: center;
+      margin-bottom: 18px;
+    }
+
+    .section-heading h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: normal;
+      font-size: 23px;
+      margin-bottom: 5px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    /* ===== CLICKABLE LINKS ===== */
+
+    .link-card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 15px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      text-decoration: none;
+      margin-top: 10px;
+      transition: 0.2s;
+    }
+
+    .link-card:hover {
+      border-color: var(--pink-dark);
+      background: #fff9fc;
+      transform: translateY(-2px);
+    }
+
+    .link-card strong {
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .link-card small {
+      display: block;
+      font-size: 11px;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+
+    .arrow {
+      color: var(--pink-dark);
+      font-size: 20px;
+    }
+
+    /* ===== DISCOUNT CODES ===== */
+
+    .discount-card {
+      border: 1px solid var(--border);
+      border-radius: 13px;
+      padding: 15px;
+      margin-top: 11px;
+    }
+
+    .discount-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .brand-name {
+      font-size: 14px;
+      font-weight: bold;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+    }
+
+    .brand-name:hover {
+      color: var(--pink-dark);
+      border-bottom-color: var(--pink-dark);
+    }
+
+    .visit {
+      font-size: 10px;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
+    .discount-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-top: 13px;
+      padding-top: 11px;
+      border-top: 1px solid var(--border);
+    }
+
+    .code-label {
+      color: var(--muted);
+      font-size: 10px;
+      margin-bottom: 3px;
+    }
+
+    .code-text {
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      overflow-wrap: anywhere;
+    }
+
+    .copy-btn {
+      border: none;
+      background: var(--pink);
+      color: #74495d;
+      border-radius: 8px;
+      padding: 10px 13px;
+      cursor: pointer;
+      font-size: 11px;
+      font-weight: bold;
+      flex-shrink: 0;
+      transition: 0.2s;
+    }
+
+    .copy-btn:hover {
+      background: #f1c4d8;
+    }
+
+    .copy-btn:focus-visible,
+    a:focus-visible {
+      outline: 2px solid var(--pink-dark);
+      outline-offset: 3px;
+    }
+
+    /* ===== FOOTER ===== */
+
+    footer {
+      text-align: center;
+      padding: 10px 0 20px;
+      color: #866c79;
+      font-size: 10px;
+      letter-spacing: 1px;
+    }
+
+    @media (max-width: 360px) {
+      .section {
+        padding: 19px 13px;
+      }
+
+      .discount-card {
+        padding: 12px;
+      }
+
+      .copy-btn {
+        padding: 9px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="website">
+
+    <!-- ===== YOUR PROFILE ===== -->
+
+    <header class="profile">
+
+      <div class="avatar">RJ</div>
+
+      <h1>RIHANNA JADE</h1>
+
+      <p>
+        beauty · fashion · lifestyle ♡<br>
+        my favourite finds, codes & little recommendations
+      </p>
+
+      <div class="socials">
+
+        <!-- CHANGE THESE LINKS TO YOUR SOCIALS -->
+
+        <a href="https://www.instagram.com/rihannaxjade/"
+           target="_blank" rel="noopener noreferrer">
+          Instagram ↗
+        </a>
+
+        <a href="https://www.tiktok.com/@rihannaajade"
+           target="_blank" rel="noopener noreferrer">
+          TikTok ↗
+        </a>
+
+      </div>
+
+    </header>
+
+
+    <!-- ===== MY LINKS ===== -->
+
+    <section class="section">
+
+      <div class="section-heading">
+        <h2>Explore ♡</h2>
+        <p>everything you need, all in one place</p>
+      </div>
+
+      <!-- Replace # with your actual link -->
+
+      <a class="link-card" href="#discounts">
+        <div>
+          <strong>My discount codes</strong>
+          <small>Shop my favourite brands & save</small>
+        </div>
+        <span class="arrow">↗</span>
+      </a>
+
+      <a class="link-card"
+         href="mailto:mrihannajade@gmail.com">
+        <div>
+          <strong>Work with me</strong>
+          <small>UGC, PR & brand collaborations</small>
+        </div>
+        <span class="arrow">↗</span>
+      </a>
+
+      <a class="link-card"
+         href="https://www.instagram.com/rihannaxjade/"
+         target="_blank" rel="noopener noreferrer">
+        <div>
+          <strong>Follow my content</strong>
+          <small>More beauty, fashion & daily life</small>
+        </div>
+        <span class="arrow">↗</span>
+      </a>
+
+    </section>
+
+
+    <!-- ===== DISCOUNT CODES ===== -->
+
+    <section class="section" id="discounts">
+
+      <div class="section-heading">
+        <h2>discount codes 🎀</h2>
+        <p>little treats for you · updated with my favourites</p>
+      </div>
+
+
+      <!--
+        HOW TO ADD A BRAND:
+        1. Copy one complete discount-card below.
+        2. Change BRAND NAME to the brand's name.
+        3. Change https://example.com to the brand's website.
+        4. Change YOURCODE to your discount code.
+        5. Change the copyCode value to the same code.
+      -->
+
+
+      <!-- BRAND 1 -->
+
+      <div class="discount-card">
+
+        <div class="discount-top">
+          <a class="@boost.mlt"
+             href="https://boost.com.mt/"
+             target="_blank" rel="noopener noreferrer">
+            @boost.mlt
+          </a>
+          <span class="visit">Visit brand ↗</span>
+        </div>
+
+        <div class="discount-bottom">
+          <div>
+            <p class="code-label">YOUR DISCOUNT CODE</p>
+            <p class="code-text">Rihanna5</p>
+          </div>
+
+          <button class="copy-btn"
+                  type="button"
+                  onclick="copyCode(this, 'Rihanna5')">
+            Copy code
+          </button>
+        </div>
+
+      </div>
+
+
+      <!-- BRAND 2 -->
+
+      <div class="discount-card">
+
+        <div class="discount-top">
+          <a class="@theprestigeco.mt"
+             href="https://www.instagram.com/theprestigeco.mt/"
+             target="_blank" rel="noopener noreferrer">
+            @theprestigeco.mt
+          </a>
+          <span class="visit">Visit brand ↗</span>
+        </div>
+
+        <div class="discount-bottom">
+          <div>
+            <p class="code-label">YOUR DISCOUNT CODE</p>
+            <p class="code-text">Rihanna</p>
+          </div>
+
+          <button class="copy-btn"
+                  type="button"
+                  onclick="copyCode(this, 'Rihanna')">
+            Copy code
+          </button>
+        </div>
+
+      </div>
+
+ <!-- BRAND 3 -->
+
+      <div class="discount-card">
+
+        <div class="discount-top">
+          <a class="@lensmartonline"
+             href="https://www.lensmartonline.com/?lenid=fx_wh_RIHANNA&fbclid=PAZXh0bgNhZW0CMTEAcGRvZgJzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAadlr0X3ukhzC8TwHUeccexJ133nU0YK9FXPBGZ6L3S1PViDSydLHu9jjllb-A_aem_c5e-HyHdB7smD2uskhQhMg"
+             target="_blank" rel="noopener noreferrer">
+           @lensmartonline
+          </a>
+          <span class="visit">Visit brand ↗</span>
+        </div>
+
+        <div class="discount-bottom">
+          <div>
+            <p class="code-label">YOUR DISCOUNT CODE</p>
+            <p class="code-text">Rihanna</p>
+          </div>
+
+          <button class="copy-btn"
+                  type="button"
+                  onclick="copyCode(this, 'Rihanna')">
+            Copy code
+          </button>
+        </div>
+
+      </div>
+
+
+
+
+
+
+      <!-- BRAND 4 -->
+
+      <div class="discount-card">
+
+        <div class="discount-top">
+          <a class="@koreanproductsmalta"
+             href="https://fina.com.mt/imports/korean-skin-care/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAcGRvZgJzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAafo86zrPAKYerlNBG3rpWxx3XlcPX3jcQYvbBXfKu-ZCNzdjerjD_qF0Xr4gQ_aem_-hKXxkB3MKPCIdZ_mshfjw"
+             target="_blank" rel="noopener noreferrer">
+            @koreanproductsmalta
+          </a>
+          <span class="visit">Visit brand ↗</span>
+        </div>
+
+        <div class="discount-bottom">
+          <div>
+            <p class="code-label">YOUR DISCOUNT CODE</p>
+            <p class="code-text">Rihanna10</p>
+          </div>
+
+          <button class="copy-btn"
+                  type="button"
+                  onclick="copyCode(this, 'Rihanna10')">
+            Copy code
+          </button>
+        </div>
+
+      </div>
+
+ <!-- BRAND 5 -->
+
+      <div class="discount-card">
+
+        <div class="discount-top">
+          <a class="@mewmewsofficial"
+             href="https://mewmews.com/"
+             target="_blank" rel="noopener noreferrer">
+            @mewmewsofficial
+          </a>
+          <span class="visit">Visit brand ↗</span>
+        </div>
+
+        <div class="discount-bottom">
+          <div>
+            <p class="code-label">YOUR DISCOUNT CODE</p>
+            <p class="code-text">RIHAN15</p>
+          </div>
+
+          <button class="copy-btn"
+                  type="button"
+                  onclick="copyCode(this, 'RIHAN15')">
+            Copy code
+          </button>
+        </div>
+
+      </div>
+
+
+
+    </section>
+
+
+    <!-- ===== CONTACT ===== -->
+
+    <section class="section">
+
+      <div class="section-heading">
+        <h2>let's work together ♡</h2>
+        <p>for brands, PR & creative projects</p>
+      </div>
+
+      <a class="link-card"
+         href="mailto:mrihannajade@gmail.com">
+        <div>
+          <strong>Get in touch</strong>
+          <small>mrihannajade@gmail.com</small>
+        </div>
+        <span class="arrow">↗</span>
+      </a>
+
+    </section>
+
+
+    <footer>
+      MADE WITH LOVE · RI­HANNA JADE ♡
+    </footer>
+
+  </main>
+
+
+  <!-- ===== COPY CODE FUNCTION ===== -->
+
+  <script>
+    async function copyCode(button, code) {
+      try {
+        if (navigator.clipboard &&
+            window.isSecureContext) {
+          await navigator.clipboard.writeText(code);
+        } else {
+          const field = document.createElement("textarea");
+          field.value = code;
+          field.style.position = "fixed";
+          field.style.opacity = "0";
+          document.body.appendChild(field);
+          field.select();
+
+          const copied = document.execCommand("copy");
+          field.remove();
+
+          if (!copied) {
+            throw new Error("Copy failed");
+          }
+        }
+
+        const originalText = button.textContent;
+        button.textContent = "Copied ✓";
+
+        setTimeout(() => {
+          button.textContent = originalText;
+        }, 1600);
+
+      } catch (error) {
+        window.prompt("Copy your discount code:", code);
+      }
+    }
+  </script>
+
+</body>
+</html>
